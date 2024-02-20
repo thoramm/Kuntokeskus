@@ -1,0 +1,7 @@
+# Oletuksena PHP ei näytä sivulla tulleita virheilmoituksia tai varoituksia.
+# Jos haluat kehitysvaiheessa tulostaa ne ruudulle, niin poista kommentti seuraavasta asetusrivistä.  
+php_flag  display_errors           1
+
+SetEnv DB_DATABASE jtollola
+SetEnv DB_USERNAME db_jtollola
+SetEnv DB_PASSWORD iemag4gaesha7reeGoo1

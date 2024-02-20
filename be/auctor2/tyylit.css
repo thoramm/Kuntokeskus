@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;  
+    max-width: 35em;
+    width: 90%;
+    margin: 1em auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 2em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+
+nav li {
+    display: block;
+    padding: 0.3em 0.5em;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #666
+}
+
+nav :hover {
+    color: blue
+}
+
+footer{
+    font-size: 75%;
+    color: #666;
+    text-align: center;
+    padding: 0.5em;
+    border-top: 2px solid #999;
+}
+
+.kuva1 {
+    float: right;
+    text-align: right;
+    margin: auto;
+}
+
+.kuva2 {
+    float: none;
+    text-align: center;
+    margin: auto;
+}
