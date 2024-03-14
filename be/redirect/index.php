@@ -10,9 +10,17 @@ $hashlinkit = array(
                     "SISAM" => "https://www.urheiluhierojajoonastollola.com/"
 );
 
-$hash = $_GET["hash"];
+if (isset($_GET["hash"])) {
+    $hash = $_GET["hash"];
 
-$url = $hashlinkit[$hash];
-    header("Location: " . $url);
-exit;
+    if (isset($hashlinkit[$hash])) {
+        $url = $hashlinkit[$hash];
+        header("Location: " . $url);
+        exit;
+    } else {
+        echo "Väärä tunniste :(";
+    }
+} else {
+    echo "Tämä on osoitteiden lyhentäjä. Odota maltilla, tänne tulee tulevaisuudessa lisää toiminnallisuutta.";
+}
 ?>
